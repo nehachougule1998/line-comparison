@@ -11,7 +11,7 @@ public class Line_Comparison {
     System.out.println("enter the coordinates of x2 & y2 : ");
     int x2 = ch.nextInt();
     int y2 = ch.nextInt();
-    
+    double length1 = Math.sqrt((x2-x1) * (x2-x1) + (y2-y1) * (y2-y1));
     
     System.out.println("enter the coordinates of x3 & y3 : ");
     int x3 = ch.nextInt();
@@ -19,13 +19,12 @@ public class Line_Comparison {
     System.out.println("enter the coordinates of x4 & y4 : ");
     int x4 = ch.nextInt();
     int y4 = ch.nextInt();
-    double length1 = Math.sqrt((x2-x1) * (x2-x1) + (y2-y1) * (y2-y1));
     double length2 = Math.sqrt((x4-x3) * (x4-x3) + (y4-y3) * (y4-y3));
 		
     System.out.println("first line length is : " + length1);
     System.out.println("second line length is : " + length2);
         System.out.println();
-    if(length1 == length2)
+	 if(length1 == length2)
         System.out.println("both lines are equal");
     else
    	 System.out.println("both lines are not equal");
