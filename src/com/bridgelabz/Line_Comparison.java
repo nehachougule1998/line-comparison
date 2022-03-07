@@ -21,8 +21,9 @@ public class Line_Comparison {
     int y4 = ch.nextInt();
     double length1 = Math.sqrt((x2-x1) * (x2-x1) + (y2-y1) * (y2-y1));
     double length2 = Math.sqrt((x4-x3) * (x4-x3) + (y4-y3) * (y4-y3));
-    System.out.println("first line length is : " + length1 +  " units" );
-    System.out.println("second line length is : " + length2 + " units" );
+		
+    System.out.println("first line length is : " + length1);
+    System.out.println("second line length is : " + length2);
         System.out.println();
     if(length1 == length2)
         System.out.println("both lines are equal");
